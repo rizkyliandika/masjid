@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Oooh+Baby&display=swap');
+:root {
+    --zinc900: #27272a;
+    --amber500: #f59e0b;
+    --gold: #f9c800;
+    --white: #ffffff;
+    --black: #000000;
+    --bg-color: #1b1c1e;
+    --orange: #f95000;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../image/bg-1.jpeg');
+}
+
+.dark body {
+    background: url('../image/bg-2.jpeg');
+}
+
+.active a {
+    color: #f95000;
+}
+
+.dark .active a {
+    color: #f95000;
+}
+
+span{
+    font-family: 'Alkalami', serif;
+}
+
+h1 {
+    font-family: 'Oooh Baby', cursive;
+}
