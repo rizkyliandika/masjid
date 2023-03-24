@@ -1,5 +1,5 @@
 <footer class="p-4 bg-cream sm:p-6 dark:bg-zinc-900">
-    <div class="md:flex md:justify-between">
+    <div class="sm:text-xs md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
             <a href="https://masjidfatimahmuhammad.com/" class="flex items-center">
                 <img src="assets/image/logo.png" class="mr-3 h-8" alt="MFM-Logo" />

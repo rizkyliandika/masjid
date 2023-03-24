@@ -2,23 +2,53 @@ let nav = document.querySelectorAll("nav");
 let offsetTopAbout = document.getElementById("tentang-kami").offsetTop;
 let section = document.querySelectorAll("section");
 let lists = document.querySelectorAll("li");
-let ct = document.querySelectorAll("#change-theme")[0];
+let changeTheme = document.querySelector("#change-theme");
 
-let theme = localStorage.getItem("color-theme");
-if (theme === "dark") document.documentElement.classList.add(theme);
+var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
-ct.addEventListener("click", () => {
-    let children = ct.children;
-    for (const child of children) {
-        child.classList.toggle("hidden");
-    }
-    document.documentElement.classList.toggle("dark");
-    if (document.documentElement.classList.contains('dark')) {
-        localStorage.setItem("color-theme", "dark");
+// Change the icons inside the button based on previous settings
+if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.classList.remove('hidden');
+    themeToggleDarkIcon.classList.add('hidden');
+} else {
+    themeToggleDarkIcon.classList.remove('hidden');
+    themeToggleLightIcon.classList.add('hidden');
+}
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
     } else {
-        localStorage.removeItem("color-theme");
+        document.documentElement.classList.remove('dark')
     }
-});
+})
+
+changeTheme.addEventListener('click', (e) => {
+    themeToggleDarkIcon.classList.toggle('hidden');
+    themeToggleLightIcon.classList.toggle('hidden');
+
+    // if set via local storage previously
+    if (localStorage.getItem('theme')) {
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+
+        // if NOT set via local storage previously
+    } else {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        }
+    }
+})
 
 window.addEventListener("scroll", (event) => {
     let scroll = window.scrollY;
