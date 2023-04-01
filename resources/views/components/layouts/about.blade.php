@@ -1,6 +1,6 @@
 <section id="tentang-kami" class="p-5 mx-auto">
     <h1
-        class="text-center mb-4 text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-none text-zinc-900 dark:text-cream">
+        class="text-center mb-4 text-3xl md:text-3xl lg:text-4xl font-black tracking-tight leading-none text-zinc-900 dark:text-cream">
         Tentang Kami</h1>
     <div class="md:grid xl:grid grid-cols-1 2xl:grid-cols-1 gap-4 pt-5">
         <div class="col-span-2">
@@ -13,8 +13,8 @@
                     <strong>F</strong>atimah
                     <strong>M</strong>uhammad</span>
 
-                <div class="sm:h-52 md:h-52">
-                    <p class="w-auto text-justify whitespace text-ellipsis h-full md:overflow-hidden sm:overflow-hidden dark:text-cream mt-4 block text-sm md:text-md lg:text-lg">Selamat malam, dari masjid fatimah muhammad, jadi ceritanya saya sedang mengerjakan program untuk membangun website untuk masjid fatimah muhammad dengan tampilan yang cukup bagus menurut saya. jadi dimohon untuk dilihat-lihat saja, kedepannya akan ada feature-feature tambahan lainnya, sekian dan terima kasih.</p>
+                <div class="min-h-min">
+                    <p class="w-auto text-justify whitespace-normal h-auto text-ellipsis md:overflow-hidden sm:overflow-hidden dark:text-cream mt-4 block text-sm md:text-md lg:text-lg">Selamat malam, dari masjid fatimah muhammad, jadi ceritanya saya sedang mengerjakan program untuk membangun website untuk masjid fatimah muhammad dengan tampilan yang cukup bagus menurut saya. jadi dimohon untuk dilihat-lihat saja, kedepannya akan ada feature-feature tambahan lainnya, sekian dan terima kasih.</p>
                 </div>
                 <a href="#"
                     class="self-start md:self-start lg:self-start mt-5 inline-flex items-center pt-5 xs:text-xs sm:text-sm text-md font-medium text-center text-zinc-900 bg-transparent rounded-lg dark:text-cream">

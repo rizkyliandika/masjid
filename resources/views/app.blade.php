@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="assets/image/logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>
-        MFM | Beranda
+        MFM | {{ $title }}
     </title>
     @vite('resources/css/app.css')
 </head>
@@ -23,7 +23,7 @@
     <x-layouts.service />
     {{-- LAYANAN END SECTION --}}
     {{-- BERITA SECTION --}}
-    <x-layouts.news :posts="$posts"/>
+    <x-layouts.news :posts="$posts" />
     {{-- BERITA END SECTION --}}
     {{-- STRUKTUR ORGANISASI SECTION --}}
     <x-layouts.organization />

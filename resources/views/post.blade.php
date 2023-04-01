@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="assets/image/logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>
-        MFM | Berita
+        MFM | {{ $title }}
     </title>
     @vite('resources/css/app.css')
 </head>

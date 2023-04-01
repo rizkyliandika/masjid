@@ -1,6 +1,6 @@
 <section id="struktur-organisasi" class="p-5 mx-auto">
     <h1
-        class="text-center mb-4 text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-none text-zinc-900 dark:text-cream">
+        class="text-center mb-4 text-3xl md:text-3xl lg:text-4xl font-black tracking-tight leading-none text-zinc-900 dark:text-cream">
         Struktur Organisasi</h1>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pt-5">
         <div class="mx-auto text-center">

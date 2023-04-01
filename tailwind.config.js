@@ -8,20 +8,17 @@ module.exports = {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
-    screens: {
-      'sm' : '280px',
-      'md': '960px',
-      'lg': '1440px',
-    },
     extend: {
+      screens: {
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1440px',
+      },
       colors: {
         'cream': '#FAF8F1',
         'orange': '#f95000',
         'section-color': '#E1CFBA',
-      },
-      screens: {
-        "2xl": "1320px",
-        "3xl": "1600px",
       },
       gridTemplateRows: {
         '8': 'repeat(8, minmax(0, 1fr))',

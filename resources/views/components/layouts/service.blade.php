@@ -1,6 +1,6 @@
 <section id="layanan" class="mx-auto py-5">
     <h1
-        class="text-center mb-4 text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-none text-zinc-900 dark:text-cream">
+        class="text-center mb-4 text-3xl md:text-3xl lg:text-4xl font-black tracking-tight leading-none text-zinc-900 dark:text-cream">
         Layanan</h1>
     <div class="grid grid-cols-1 gap-5 my-10 mx-3 md:grid-cols-3 lg:grid-cols-3 p-5">
         <div class="border border-cream dark:border-zinc-700 shadow-lg rounded-xl">

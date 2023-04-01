@@ -2,7 +2,7 @@
 
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h1
-            class="text-center mb-4 text-2xl md:text-3xl lg:text-4xl font-black tracking-tight leading-none text-zinc-900 dark:text-cream">
+            class="text-center mb-4 text-3xl md:text-3xl lg:text-4xl font-black tracking-tight leading-none text-zinc-900 dark:text-cream">
             Kontak</h1>
         <p class="mb-8 lg:mb-16 font-light text-center text-zinc-500 dark:text-cream sm:text-xl">Lorem ipsum, dolor
             sit amet consectetur adipisicing elit. Excepturi dolore a labore totam libero esse voluptatibus recusandae

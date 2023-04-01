@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -14,9 +15,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all()->chunk(4)->first();
-        // ddd($posts);
-        return view('app', ['posts' => $posts]);
+        $posts = Post::paginate(4)->toJson();
+        $posts = json_decode($posts);
+        // var_dump($posts);
+        return view('app', ['title' => 'Beranda', 'posts' => $posts]);
     }
 
     /**
@@ -48,7 +50,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return view('post', ['post' => $post]);
+        return view('post', ['title' => 'Blog', 'post' => $post]);
     }
 
     /**
